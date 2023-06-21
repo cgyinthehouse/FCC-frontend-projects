@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@keyframes hover {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(88, 191, 216);
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s ease;
+}
+
+#quote-box {
+  background-color: white;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  min-height: 255px;
+  width: 550px;
+  padding: 40px 50px;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+#quote-box::after {
+  color: white;
+  content: "a freecodecamp project by @cgyinthehouse";
+  position: relative;
+  bottom: -80px;
+}
+#quote-box #quote-text {
+  font-weight: bold;
+  font-size: 1.75em;
+  transition: color 1s ease;
+}
+#quote-box #quote-text #text {
+  display: flex;
+  flex-direction: column;
+}
+#quote-box #quote-text #text svg:last-child {
+  align-self: flex-end;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons #new-quote {
+  background: none;
+  color: rgb(88, 191, 216);
+  border: none;
+  padding: 1px;
+  transition: transform 0.25s ease;
+}
+.buttons #new-quote:hover {
+  animation: hover 0.25s ease forwards;
+  transform: translateX(8px);
+}
+.buttons a {
+  color: white;
+  margin: 5px;
+  padding: 8px;
+  background-color: rgb(88, 191, 216);
+  border-radius: 3px;
+}
+.buttons a:hover {
+  animation: hover 0.25s ease forwards;
+  color: white;
+}
+
+#author {
+  width: 100%;
+  text-align: right;
+  transition: color 0.5s ease;
+}
+#author::before {
+  content: "— ";
+}/*# sourceMappingURL=App.css.map */
