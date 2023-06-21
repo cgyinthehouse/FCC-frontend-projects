@@ -29,6 +29,11 @@ $green: rgb(66, 218, 79);
 }
 
 #quote-box {
+  @media screen and (min-width: 550px) {
+    max-width: 550px;
+    padding: 40px 50px;
+    font-size: medium;
+  }
   background-color: white;
   margin: auto;
   box-sizing: border-box;
@@ -37,15 +42,17 @@ $green: rgb(66, 218, 79);
   justify-content: space-between;
   border-radius: 10px;
   min-height: 255px;
-  width: 550px;
-  padding: 40px 50px;
+  width: 90%;
+  padding: 2rem 2.5rem;
   align-items: center;
   font-family: "Raleway", sans-serif;
+  font-size: small;
   &::after {
     color: white;
+    text-align: center;
+    height: 0px;
     content: "a freecodecamp project by @cgyinthehouse";
-    position:relative;
-    bottom: -80px;
+    transform: translateY(50px);
   }
   #quote-text {
     font-weight: bold;

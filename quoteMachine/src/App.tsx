@@ -6,8 +6,8 @@ import randomColor from "./libs/randomColor";
 import Typewriter from "typewriter-effect";
 import "./sass/App.css";
 function App() {
-  const [quote, setQuote] = useState<string>("this is a quote");
-  const [author, setAuthor] = useState<string>("John Cena");
+  const [quote, setQuote] = useState<string>("");
+  const [author, setAuthor] = useState<string>("");
   const [color, setColor] = useState<string>("");
 
   const changeColor = () => {
