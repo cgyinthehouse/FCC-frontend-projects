@@ -7,6 +7,10 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         mono: ["JetBrains Mono","ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
       },
+      content: {
+        preview: "url('/preview.svg')",
+        markdown: "url('/markdown.svg')"
+      }
     },
   },
   plugins: [],
