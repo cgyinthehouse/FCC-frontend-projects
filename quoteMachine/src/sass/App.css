@@ -22,7 +22,7 @@
   background-color: rgb(88, 191, 216);
   display: flex;
   flex-direction: column;
-  transition: background-color 1s ease;
+  transition: background-color 1s ease 0.25s;
 }
 
 #quote-box {
