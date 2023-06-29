@@ -21,15 +21,15 @@
     @apply list-decimal pl-6 my-4;
   }
   a {
-    @apply text-blue-600 underline;
+    @apply text-blue-600 dark:text-sky-500 underline;
   }
 
   p > code {
-    @apply bg-slate-200 rounded-md p-1 text-[85%]
+    @apply bg-slate-200 rounded-md p-1 text-[85%] dark:bg-gray-500
   }
 
   blockquote {
-    @apply my-4 mx-[40px] text-lg text-sky-800 leading-6 italic flex before:content-['|']  before:-translate-x-4 before:text-slate-400 before:not-italic before:font-bold 
+    @apply my-4 mx-[40px] text-lg text-sky-800 dark:text-sky-400 leading-6 italic flex before:content-['|']  before:-translate-x-4 before:text-slate-400 before:not-italic before:font-bold 
   }
 
 }
