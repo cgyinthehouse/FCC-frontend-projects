@@ -28,6 +28,22 @@
     @apply bg-slate-200 rounded-md p-1 text-[85%] dark:bg-gray-500
   }
 
+  table, th, td {
+    @apply border border-slate-600 dark:border-slate-200
+  }
+
+  table {
+    @apply my-4
+  }
+
+  th, td {
+    @apply py-0.5 px-1 md:py-1 md:px-2
+  }
+
+  th {
+    @apply bg-neutral-200 dark:bg-gray-500
+  }
+
   blockquote {
     @apply my-4 mx-[40px] text-lg text-sky-800 dark:text-sky-400 leading-6 italic flex before:content-['|']  before:-translate-x-4 before:text-slate-400 before:not-italic before:font-bold 
   }
