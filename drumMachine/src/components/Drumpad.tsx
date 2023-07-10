@@ -21,7 +21,7 @@ const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
   }, [handleDisplay, clip]);
 
   useEffect(() => {
-    if (pressedKey === keyTrigger.toLowerCase()) {
+    if (pressedKey.toLowerCase() === keyTrigger.toLowerCase()) {
       setPressed(true);
       play();
     }
@@ -33,9 +33,10 @@ const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
     <div
       className={`${
         pressed
-          ? "bg-violet-500/50 text-green-400 shadow-teal-300 shadow-xl"
-          : "text-slate-700 shadow-fuchsia-300 shadow-md"
-      } drum-pad rounded-lg hover:bg-opacity-50 bg-neutral-400 active:bg-violet-500/50 active:text-green-400 active:shadow-teal-300 active:shadow-xl p-4 w-14 text-center font-semibold`}
+          ? "text-rose-300 shadow-teal-300 shadow-xl"
+          : "text-teal-300 shadow-fuchsia-300 shadow-md"
+      } drum-pad rounded-lg hover:bg-gray-300/30 bg-neutral-400/70 active:text-rose-300 active:shadow-teal-300 active:shadow-xl p-4 w-14 text-center font-semibold font-montserrat`}
+      id={clip}
       onClick={play}
     >
       <audio ref={audioRef} src={src} className="clip" id={keyTrigger}></audio>

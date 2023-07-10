@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      backgroundImage: {
+        studio: "url('https://www.unlabeledmusic.com/wp-content/uploads/2022/08/1.jpg')",
+      },
+      boxShadow: {
+        ring: "0 0 20px 10px rgba(0, 0, 0, 0.1)",
+      },
+    },
   },
   plugins: [],
 };

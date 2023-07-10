@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 #root {
-  @apply flex w-screen h-screen bg-neutral-800 place-items-center
+  @apply flex w-screen h-screen bg-studio bg-cover bg-center place-items-center overflow-auto
 }

@@ -3,94 +3,94 @@
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
       "clip": "Heater 1",
-      "key": "A"
+      "key": "Q"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
       "clip": "Heater 2",
-      "key": "S"
+      "key": "W"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
       "clip": "Heater 3",
-      "key": "D"
+      "key": "E"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
       "clip": "Heater 4",
-      "key": "F"
+      "key": "A"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
       "clip": "Clap",
-      "key": "G"
+      "key": "S"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
       "clip": "Open-HH",
-      "key": "H"
+      "key": "D"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
       "clip": "Kick-n'-Hat",
-      "key": "J"
+      "key": "Z"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
       "clip": "Kick",
-      "key": "K"
+      "key": "X"
     },
     {
       "src": "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
       "clip": "Closed-HH",
-      "key": "L"
+      "key": "C"
     }
   ],
   "clip2": [
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/2889/2889-preview.mp3",
       "clip": "Funny cartoon fast splat ",
-      "key": "Q"
+      "key": "1"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/2891/2891-preview.mp3",
       "clip": "Cartoon fart sound",
-      "key": "W"
+      "key": "2"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3050/3050-preview.mp3",
       "clip": "Cartoon strong fart",
-      "key": "E"
+      "key": "3"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3051/3051-preview.mp3",
       "clip": "Armhole farting",
-      "key": "R"
+      "key": "4"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3052/3052-preview.mp3",
       "clip": "Farting balloon deflate",
-      "key": "T"
+      "key": "5"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3053/3053-preview.mp3",
       "clip": "Cartoon fail blow fart",
-      "key": "Y"
+      "key": "6"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3054/3054-preview.mp3",
       "clip": "Farting doubt male laugh",
-      "key": "U"
+      "key": "7"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3055/3055-preview.mp3",
       "clip": "Cartoon fart triple",
-      "key": "I"
+      "key": "8"
     },
     {
       "src": "https://assets.mixkit.co/active_storage/sfx/3056/3056-preview.mp3",
       "clip": "Cartoon fart or splat",
-      "key": "O"
+      "key": "9"
     }
   ],
   "clip3": [
