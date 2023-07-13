@@ -34,14 +34,14 @@ function App() {
     >
       <div>
         {banks.map((bank) => (
-          <div className="relative">
+          <div className="relative group">
             <button
               className={`${
                 bank == "clip1" ? "hidden" : ""
-              } text-blue-700 text-lg text-center absolute -top-3  bg-neutral-100/50 backdrop-blur-md rounded-full px-2 w-7 transition ease  opacity-0 hover:opacity-100`}
+              } text-blue-700 text-lg text-center absolute -top-3  bg-neutral-100/50 backdrop-blur-md rounded-full px-2 w-7 transition ease  opacity-0 group-hover:opacity-100`}
               onClick={() => removebank!(bank === "clip1" ? "" : bank)}
             >
-              x
+              ×
             </button>
             <PadBank key={bank} clip={CLIPS[bank]} volume={volume} />
           </div>
