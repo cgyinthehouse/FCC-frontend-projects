@@ -19,4 +19,4 @@
 | Markdown previewer | ![markdown_previewer-screenshot](https://raw.githubusercontent.com/cgyinthehouse/FCC-frontend-projects/main/markdownPreviewer/screenshots/mp-screenshot1.png) |
 | Drum machine       | ![drum_machine-screenshot](https://raw.githubusercontent.com/cgyinthehouse/FCC-frontend-projects/main/drumMachine/screenshots/dm-screenshot1.png) |
 | Calculator | ![Calculator-screenshot](https://raw.githubusercontent.com/cgyinthehouse/FCC-frontend-projects/main/calculator/screenshots/c-screenshot1.png) |
-| Pomodoro    | ![Pomodoro_timer-screenshot](https://raw.githubusercontent.com/cgyinthehouse/FCC-frontend-projects/main/pomodoroTimer/screenshots/timer-screenshot1.png) |
+| Pomodoro    | ![Pomodoro_timer-screenshot](https://raw.githubusercontent.com/cgyinthehouse/fcc-pomodoro/main/screenshots/timer-screenshot1.png) |
