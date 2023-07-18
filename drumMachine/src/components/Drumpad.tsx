@@ -39,7 +39,7 @@ const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
       id={clip}
       onClick={play}
     >
-      <audio ref={audioRef} src={src} className="clip" id={keyTrigger}></audio>
+      <audio ref={audioRef} preload="auto" src={src} className="clip" id={keyTrigger}></audio>
       {keyTrigger}
     </div>
   );

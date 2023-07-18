@@ -7,7 +7,7 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        studio: "url('https://www.unlabeledmusic.com/wp-content/uploads/2022/08/1.jpg')",
+        studio: "url('/src/assets/studio.jpg')",
       },
       boxShadow: {
         ring: "0 0 20px 10px rgba(0, 0, 0, 0.1)",
