@@ -1,4 +1,10 @@
-   [submodule "pomodoro"]
-       path = pomodoro
-       url = https://github.com/cgyinthehouse/fcc-pomodoro.git
+[submodule "pomodoro"]
+   path = pomodoro
+   url = https://github.com/cgyinthehouse/fcc-pomodoro.git
+   branch = main
+   
+[submodule "calculator"]
+   path = calculator
+   url = https://github.com/cgyinthehouse/fcc-calculator
+   branch = main
 
