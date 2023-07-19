@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
-import { useKeys } from "../hooks/useKeys";
+import { useKeys, useDisplay } from "../hooks";
 
 type Props = {
   keyTrigger: string;
@@ -9,7 +9,8 @@ type Props = {
 };
 const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const { pressedKey, handleDisplay } = useKeys();
+  const { pressedKey } = useKeys();
+  const { handleDisplay } = useDisplay();
   const [pressed, setPressed] = useState<boolean>(false);
 
   const play = useCallback(() => {
@@ -25,9 +26,12 @@ const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
       setPressed(true);
       play();
     }
-    audioRef!.current!.volume = Number(vol);
     return () => setPressed(false);
-  }, [pressed, pressedKey, keyTrigger, play, vol]);
+  }, [keyTrigger, play, pressedKey]);
+
+  useEffect(() => {
+    audioRef.current!.volume = Number(vol);
+  }, [vol]);
 
   return (
     <div
@@ -39,7 +43,13 @@ const Drumpad = ({ keyTrigger, src, clip, vol }: Props) => {
       id={clip}
       onClick={play}
     >
-      <audio ref={audioRef} preload="auto" src={src} className="clip" id={keyTrigger}></audio>
+      <audio
+        ref={audioRef}
+        preload="auto"
+        src={src}
+        className="clip"
+        id={keyTrigger}
+      ></audio>
       {keyTrigger}
     </div>
   );

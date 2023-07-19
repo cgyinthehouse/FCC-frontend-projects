@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import KeyDownProvider from "./components/KeyDownProvider.tsx";
+import KeyContext from "./context/KeyContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <KeyDownProvider>
+    <KeyContext>
       <App />
-    </KeyDownProvider>
+    </KeyContext>
   </React.StrictMode>
 );

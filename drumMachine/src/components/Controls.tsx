@@ -1,5 +1,5 @@
 import { useRef, useCallback } from "react";
-import { useKeys } from "../hooks/useKeys";
+import { useDisplay, useBanks } from "../hooks";
 
 type Props = {
   volume: string;
@@ -7,7 +7,8 @@ type Props = {
 };
 
 const Controls = ({ volume, changeVolume }: Props) => {
-  const { currentDisplay, handleDisplay, addbank, banks } = useKeys();
+  const { currentDisplay, handleDisplay } = useDisplay();
+  const { addbank, banks } = useBanks();
   const timeoutRef = useRef<number | undefined>();
   const selectRef = useRef<HTMLSelectElement>(null);
 
@@ -69,9 +70,9 @@ const Controls = ({ volume, changeVolume }: Props) => {
         <button
           title="add clip"
           className="text-sky-300 hover:text-violet-300 text-lg "
-          onClick={() =>
-            selectRef.current!.value && addbank!(selectRef.current!.value)
-          }
+          onClick={() => {
+            if (selectRef.current && addbank) addbank(selectRef.current.value);
+          }}
         >
           +
         </button>

@@ -1,10 +1,10 @@
-import { ReactNode, KeyboardEvent, useState, createContext } from "react";
+import { ReactNode, createContext, useState } from "react";
 
 interface contextType {
   currentDisplay: string;
   pressedKey: string;
   banks: string[];
-  handleKeyDown?: (e: KeyboardEvent<HTMLDivElement>) => void;
+  handleKeyDown?: (e: KeyboardEvent) => void;
   handleKeyUp?: () => void;
   handleDisplay?: (d: string) => void;
   addbank?: (bank: string) => void;
@@ -18,11 +18,10 @@ export const KeyContext = createContext<contextType>({
 });
 
 export default function KeyDownProvider({ children }: { children: ReactNode }) {
-  const [pressedKey, setPressedKey] = useState<string>("");
-  const [currentDisplay, setCurrentDisplay] = useState<string>("");
+  const [pressedKey, setPressedKey] = useState("");
+  const [currentDisplay, setCurrentDisplay] = useState("");
   const [banks, setBanks] = useState<string[]>(["clip1"]);
-
-  const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     setPressedKey(e.key);
   };
   const handleKeyUp = () => {
@@ -38,8 +37,8 @@ export default function KeyDownProvider({ children }: { children: ReactNode }) {
     setBanks([...banks, bank]);
   };
 
-  const removebank = (bank?: string) => {
-    if (bank) setBanks(banks.filter((b) => b !== bank));
+  const removebank = (bank: string) => {
+    setBanks(banks.filter((b) => b !== bank));
   };
 
   return (
