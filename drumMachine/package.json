@@ -1,5 +1,6 @@
 {
   "name": "drum-machine",
+  "author": "Kent Chen",
   "private": true,
   "version": "0.0.0",
   "type": "module",

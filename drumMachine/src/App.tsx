@@ -18,11 +18,11 @@ function App() {
   const CLIPS = clips as ClipsType;
 
   useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown!);
-    document.addEventListener("keyup", handleKeyUp!);
+    document.addEventListener("keydown", handleKeyDown as EventListener);
+    document.addEventListener("keyup", handleKeyUp as EventListener);
     return () => {
-      document.removeEventListener("keydown", handleKeyDown!);
-      document.removeEventListener("keyup", handleKeyUp!);
+      document.removeEventListener("keydown", handleKeyDown as EventListener);
+      document.removeEventListener("keyup", handleKeyUp as EventListener);
     };
   }, [handleKeyDown, handleKeyUp]);
 
@@ -39,7 +39,7 @@ function App() {
               className={`${
                 bank == "clip1" ? "hidden" : ""
               } text-blue-700 text-lg text-center absolute -top-3  bg-neutral-100/50 backdrop-blur-md rounded-full px-2 w-7 transition ease  opacity-0 group-hover:opacity-100`}
-              onClick={() => removebank!(bank === "clip1" ? "" : bank)}
+              onClick={() => removebank && removebank(bank === "clip1" ? "" : bank)}
             >
               ×
             </button>
