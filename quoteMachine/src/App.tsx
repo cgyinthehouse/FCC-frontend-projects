@@ -1,4 +1,9 @@
-import { FaQuoteLeft, FaQuoteRight, FaTwitter, FaTumblr } from "react-icons/fa";
+import {
+  FaQuoteLeft,
+  FaQuoteRight,
+  FaXTwitter,
+  FaThreads
+} from "react-icons/fa6";
 import { IoCaretForwardCircle } from "react-icons/io5";
 import { useState, useLayoutEffect } from "react";
 import { getQuote } from "./libs/getquote";
@@ -16,8 +21,8 @@ function App() {
 
   const changeQuote = () => {
     getQuote().then((quote) => {
-      setQuote(quote[0].content);
-      setAuthor(quote[0].author);
+      setQuote(quote["0"].quote);
+      setAuthor(quote["0"].author);
     });
     changeColor();
   };
@@ -37,7 +42,7 @@ function App() {
                 options={{
                   strings: quote,
                   autoStart: true,
-                  delay: 40,
+                  delay: 40
                 }}
               />
               <FaQuoteRight />
@@ -51,12 +56,12 @@ function App() {
               <a
                 id="tweet-quote"
                 href={
-                  "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+                  "https://twitter.com/intent/tweet?hashtags=breakingbad&related=freecodecamp&text=" +
                   encodeURIComponent(`"${quote}" ${author}`)
                 }
                 target="_blank"
               >
-                <FaTwitter />
+                <FaXTwitter />
               </a>
               <a
                 href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${encodeURIComponent(
@@ -66,13 +71,24 @@ function App() {
                 )}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`}
                 target="_blank"
               >
-                <FaTumblr />
+                <FaThreads />
               </a>
             </div>
             <button id="new-quote" onClick={changeQuote}>
               <IoCaretForwardCircle size={35} />
             </button>
           </div>
+        </div>
+        <div id="footer">
+          <p>Quotes from Breaking Bad</p>
+          <p>
+            Made by{" "}
+            <a href="https://github.com/cgyinthehouse">@cgyinthehouse</a> with a
+            shoutout to this{" "}
+            <a href="https://github.com/shevabam/breaking-bad-quotes?tab=readme-ov-file">
+              API
+            </a>{" "}
+          </p>
         </div>
       </div>
     </>

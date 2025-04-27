@@ -22,12 +22,14 @@
   background-color: rgb(88, 191, 216);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: background-color 1s ease 0.25s;
 }
 
 #quote-box {
   background-color: white;
-  margin: auto;
+  margin: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -46,13 +48,6 @@
     padding: 40px 50px;
     font-size: medium;
   }
-}
-#quote-box::after {
-  color: white;
-  text-align: center;
-  height: 0px;
-  content: "a freecodecamp project by @cgyinthehouse";
-  transform: translateY(50px);
 }
 #quote-box #quote-text {
   font-weight: bold;
@@ -103,4 +98,18 @@
 }
 #author::before {
   content: "— ";
+}
+
+#footer {
+  text-align: center;
+  font-size: small;
+  color: white;
+  padding: 2px;
+}
+#footer p {
+  color: white;
+  margin: 0.5rem auto;
+}
+#footer p a {
+  color: lightgray;
 }/*# sourceMappingURL=App.css.map */
